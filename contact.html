@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NextLevel E-Sport - Rejoignez la compétition</title>
   <link rel="stylesheet" href="styles.css">
@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+     <header class="header">
     <div class="container">
       <div class="header-content">
         <div class="logo">
@@ -26,48 +26,30 @@
       </div>
     </div>
   </header>
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="container hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          <span>Saison 2025 en cours</span>
+    <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">Restez connecté</h2>
+          <p class="newsletter-description">
+            Inscrivez-vous à notre newsletter pour recevoir les dernières actualités, annonces de tournois et offres exclusives.
+          </p>
         </div>
-        <h1 class="hero-title">
-          Rejoignez la<br/>
-          <span class="hero-title-gradient">Compétition</span>
-        </h1>
-        <p class="hero-description">
-          Affrontez les meilleurs joueurs, participez à des tournois épiques et devenez une légende de l'e-sport.
-        </p>
-        <a href="tournois.html" class="hero-button">
-          <span>Découvrir les tournois</span>
-          <svg class="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-          </svg>
-        </a>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <div class="stat-value">50K+</div>
-            <div class="stat-label">Joueurs actifs</div>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <div class="stat-value">200+</div>
-            <div class="stat-label">Tournois</div>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <div class="stat-value">$2M+</div>
-            <div class="stat-label">Prize Pool</div>
-          </div>
-        </div>
+        <form class="newsletter-form">
+          <input type="text" placeholder="Votre username" class="newsletter-input" required>
+          <input type="email" placeholder="Votre adresse email" class="newsletter-input" required>
+        </br>
+          <button type="submit" class="newsletter-button">
+            <span>S'abonner</span>
+            <svg class="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
-  </section> 
-  <footer id="contact" class="footer">
+  </section>
+   <footer id="contact" class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
@@ -111,6 +93,7 @@
               <li><a href="#" class="footer-link">Calendrier</a></li>
             </ul>
           </div>
+        </br>
           <div class="footer-column">
             <h3 class="footer-heading">Communauté</h3>
             <ul class="footer-list">
@@ -120,6 +103,7 @@
               <li><a href="#" class="footer-link">Support</a></li>
             </ul>
           </div>
+           </br>
           <div class="footer-column">
             <h3 class="footer-heading">Légal</h3>
             <ul class="footer-list">

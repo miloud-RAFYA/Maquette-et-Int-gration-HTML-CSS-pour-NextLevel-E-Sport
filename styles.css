@@ -51,9 +51,11 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
 }
+.logo
 
 .logo-text {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .logo-accent {
@@ -283,6 +285,152 @@ body {
 .section-description {
   font-size: 1.125rem;
   color: #a0a0a0;
+}
+/* profile */
+.equipe-desc{
+  display: flex;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 1.5rem;
+  margin:10px;
+ 
+}
+.logo-prof{
+  margin-left:10px ;
+  margin-top:70px ;
+  padding: 10px;
+  margin-bottom: 200px;
+  display:flex;
+  flex-direction: column;
+  background: -webkit-linear-gradient(#251639);
+  border-radius:10px;
+  width:400px;
+
+}
+.logo-img{
+  background-image: url(public/OIP3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  margin:40px; 
+  border-radius:40px;
+}
+.logo-equip{
+  text-align: left;
+  padding:0px ;
+}
+.nom-equipe{
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #8b5cf6;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-left:50px;
+}
+.info-equipe{
+  display: flex;
+  color: aqua;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left:50px;
+}
+.inf-item{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-left:50px; 
+}
+.description{
+  background-image:url(public/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius:10px;
+  margin: 70px 10px 200px 150px ;
+  padding: 10px;
+}
+.Effectif{
+  margin-left: 33vw;
+  color: #8b5cf6;
+  font-family: "Orbitron", sans-serif;
+  gap: 8rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.text-description{
+  background: -webkit-linear-gradient(#cebff011);
+  border-radius:10px;
+  padding: 10px;
+  color: #f9fafa;
+  font-weight: 800;
+  margin:800px 0px 0px 5px ;
+ 
+}
+.nambre-equipe{
+ background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+   border-radius: 1.5rem;
+  margin:10px;
+}
+.effectif-joueur{
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 1.5rem; 
+  margin: 20px;
+}
+.joueur {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table, th, td {
+        border: 1px solid black;
+        gap:10px;
+        border-color: #fdfcff00;
+      }
+      thead {
+        background-color:#efebf300;
+        color: #0adbe3;
+      }
+      th {
+        text-align: center;
+        font-size: 1.3rem;
+        height: 50px;
+        color:#0adbe3;
+      }
+      tr{
+        text-align: center;
+        height: 50px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color:#f8fcfc
+      }
+      tbody tr:nth-child(odd) {
+        background: #f5f3f900;
+      }
+      tbody tr:nth-child(even) {
+        background: #f1eff400;
+      }
+.tour-remporter{
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 1.5rem; 
+  margin: 20px;
+  text-align: justify;
+  padding-left: 40px;
+  font-size: 2rem;
+
 }
 
 /* Tournaments Grid */
@@ -675,7 +823,7 @@ body {
 }
 
 .newsletter-form {
-  display: flex;
+  display: grid; 
   gap: 1rem;
   max-width: 600px;
   margin: 0 auto;
@@ -714,7 +862,7 @@ body {
   font-size: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
 }
 
@@ -728,17 +876,23 @@ body {
   background: rgba(10, 10, 15, 0.95);
   border-top: 1px solid rgba(59, 130, 246, 0.2);
   padding: 4rem 0 2rem;
-}
-
-.footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.footer-links{
+  display: flex;
+  padding-right: 1%;
+
+}
+.footer-content {
+  display:flex;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
 }
 
 .footer-brand {
-  max-width: 400px;
+  max-width: 450px;
+  padding-right: cm;
 }
 
 .footer-tagline {
@@ -784,7 +938,9 @@ body {
   color: #ffffff;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  padding-right:3cm;
 }
+
 
 .footer-list {
   list-style: none;
@@ -804,7 +960,7 @@ body {
 }
 
 .footer-bottom {
-  padding-top: 2rem;
+  padding-bottom: 2rem;
   border-top: 1px solid rgba(59, 130, 246, 0.2);
   text-align: center;
 }
